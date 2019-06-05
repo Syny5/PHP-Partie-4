@@ -16,18 +16,19 @@
             <div class="jumbotron jumbotron-fluid">
               <div class="container">
                 <h1 class="display-3">Partie 4 - Exercice 5</h1>
-                <p class="lead">Faire une fonction qui prend en paramètre un nombre et une chaine de caractères et qui renvoit la concaténation de ces deux paramètres.</p>
+                <p class="lead">Faire une fonction qui prend en paramètre un nombre
+                et une chaine de caractères et qui renvoit la concaténation de ces deux paramètres.</p>
               </div>
             </div>
           </header>
           <!-- main -->
           <main>
             <?php
-            function concat($text, $nbr){
-              $result= $text . $nbr;
-              return $result;
-            }
-            echo concat('Mon chiffre porte-bonheur est le ', 5);
+              function concat($text, $nbr){
+                $result = $text . $nbr;
+                return $result;
+              }
+              echo concat('Mon chiffre porte-bonheur est le ', 5);
             ?>
           </main>
           <!-- footer -->

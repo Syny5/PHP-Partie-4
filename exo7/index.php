@@ -35,22 +35,22 @@
           <!-- main -->
           <main>
             <?php
-            function type($age,$gender){
-              if($age >= 18 && $gender = 'homme'){
-                $result = 'Vous êtes un homme et vous êtes majeur.';
+              function type($age,$gender){
+                if($age >= 18 && $gender = 'homme'){
+                  $result = 'Vous êtes un homme et vous êtes majeur.';
+                }
+                elseif($age < 18 && $gender = 'homme'){
+                  $result = 'Vous êtes un homme et vous êtes mineur.';
+                }
+                elseif($age >= 18 && $gender = 'femme'){
+                  $result = 'Vous êtes une femme et vous êtes majeure.';
+                }
+                else{
+                  $result = 'Vous êtes une femme vous êtes mineure.';
+                }
+                return $result;
               }
-              elseif($age < 18 && $gender = 'homme'){
-                $result = 'Vous êtes un homme et vous êtes mineur.';
-              }
-              elseif($age >=18 && $gender = 'femme'){
-                $result = 'Vous êtes une femme et vous êtes majeure.';
-              }
-              else{
-                $result = 'Vous êtes une femme vous êtes mineure.';
-              }
-              return $result;
-            }
-            echo type(20, 'homme');
+              echo type(20, 'homme');
             ?>
           </main>
           <!-- footer -->

@@ -24,7 +24,7 @@
           <!-- main -->
           <main>
             <?php
-              function addition($nbr1, $nbr2, $nbr3){
+              function addition($nbr1=0, $nbr2=0, $nbr3=0){
                 $result = $nbr1 + $nbr2 + $nbr3;
                 return $result;
               }
